@@ -37,7 +37,7 @@ body {
     align-items: center;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    border: 5px solid orange;
+    border-bottom: 5px solid orange;
 }
 
 .hero {
@@ -342,13 +342,17 @@ a:after {
 
 /* Contact Page */
 
-.contactLeft {
-    flex-basis: 35%;
+.contactContainer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding : 5vw;
 }
 
 .contactLeft h2{
     font-family: 'Inria Serif', serif;
-    font-size: 75px;
+    font-size: 400%;
+    margin-bottom: 30px;
 }
 
 .contactLeft span {
@@ -381,7 +385,6 @@ a:after {
 .contactRight form {
     width: 100%;
     overflow: hidden;
-    margin-top: -182px;
 }
 
 form input, form textarea {
@@ -401,5 +404,4 @@ form input, form textarea {
 form button {
     float: right;
     clear: both;
-
 }
