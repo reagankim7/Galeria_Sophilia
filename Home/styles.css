@@ -6,6 +6,16 @@
     font-family: 'Inria Serif', serif;
 }
 
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+}
+
 body {
     background: black;
     color: white;
@@ -14,16 +24,31 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(/test-project/media/homePicture1.jpg);
     background-size: cover;
     background-position: center;
 }
 
+
+
 .container {
     /* placement of list to be centered */
-    padding-top: 34px;
-    padding-left: 30%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border: 5px solid orange;
+}
+
+.hero {
+    display: flex;
+    background-image: url(../media/homePicture1.jpg);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 3vw;
+    padding-bottom: 5vw;
 }
 
 nav {
@@ -71,8 +96,7 @@ a:after {
 
 .homeTitle {
     display: flex;
-    margin-top: 215px;
-    padding-left: 9.5%;
+    margin-top: 50px;
     text-align: center;
     align-items: center;
 }
@@ -95,8 +119,6 @@ a:after {
 }
 
 .homeDescription {
-    margin-top: 3%;
-    padding-right: 44%;
     line-height: 0.9;
     text-align: center;
     align-items: center;
@@ -192,13 +214,16 @@ a:after {
 
 #exhibition {
     padding: 0px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 #exhibition h3 {
     font-family: 'Inria Serif', serif;
     font-size: 82px;
     font-weight: bold;
-    padding-left: 28%;
     letter-spacing: 32px;
 }
 .grid {
@@ -242,26 +267,24 @@ a:after {
 
 /* Account Promotion */
 #member {
-    margin-top: 60px;
+    margin-top: 50px;
     width: 100%;
-    height: 320px;
     display: flex;  /* Make flex container */ 
     justify-content: center;  /* Center horizontally */
     align-items: center;  /* Center vertically */
-    background-image: url(/test-project/media/pic1.png);
+    background-image: url(../media/pic1.png);
     background-size: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
-
-
 
 .container1 {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 90%;
-    height: 210px;
     margin:  auto;
-    background: rgba(0, 0, 0, 0.527);
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .left {
@@ -318,10 +341,6 @@ a:after {
 }
 
 /* Contact Page */
-
-.container2 {
-    padding: 70px 90px;
-}
 
 .contactLeft {
     flex-basis: 35%;
