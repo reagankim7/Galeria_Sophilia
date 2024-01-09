@@ -14,16 +14,19 @@ body {
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(Media/homePicture1.jpg);
+    background-image: url(../media/homePicture1.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .container {
     /* placement of list to be centered */
-    padding-top: 34px;
-    padding-left: 30%;
+    display: flex;
+    justify-content: center;
     align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    border-bottom: 5px solid orange;
 }
 
 nav {
@@ -93,13 +96,13 @@ a:after {
 }
 
 .leftSide {
-    background-image: url(/test-project/media/homePicture1.jpg);
+    background-image: url(../media/homePicture1.jpg);
     background-position: center;
     background-size: cover;
 }
 
 .rightSide {
-    background-image: url(/test-project/media/e281a0c8098828a8fb489063101f40ef.jpg);
+    background-image: url(../media/e281a0c8098828a8fb489063101f40ef.jpg);
     background-position: center;
     background-size: cover;
 }
