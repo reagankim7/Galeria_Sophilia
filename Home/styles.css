@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inria Serif', serif;
+}
+
+body {
+    background: black;
+    color: white;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/test-project/media/homePicture1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    /* placement of list to be centered */
+    padding-top: 34px;
+    padding-left: 30%;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    /* horizontal spacing between li */
+    margin: 5px 75px;
+}
+
+a {
+    font-family: 'Inria Sans', sans-serif;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    padding: 0 0;
+}
+
+/* animation for hover */
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 138, 58);
+    height: 6px;
+    width: 0;
+    left: 0 ;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.homeHeader a:hover {
+    color: white;
+}
+
+.homeHeader :hover:after {
+    width: 100%;
+}
+
+.homeTitle {
+    display: flex;
+    margin-top: 215px;
+    padding-left: 9.5%;
+    text-align: center;
+    align-items: center;
+}
+
+
+.homeTitle h1 {
+    font-family: 'Inria Serif', serif;
+    font-size: 75px;
+    font-weight: lighter;
+    color: white;
+}
+
+.homeTitle span {
+    font-family: 'Inria Serif', serif;
+    font-weight: bolder;
+    line-height: 0.7;
+    text-shadow: 4px 6px 4px black;
+    font-size: 110px;
+    color:  rgb(255, 138, 58);
+}
+
+.homeDescription {
+    margin-top: 3%;
+    padding-right: 44%;
+    line-height: 0.9;
+    text-align: center;
+    align-items: center;
+    font-weight: lighter;
+}
+
+.homeDescription p {
+    font-family: 'Inria Serif', serif;
+    color: white;
+    font-size: 30px;
+}
+
+.homeDescription span {
+    color:  rgb(255, 138, 58);
+}
+
+
+/* Ticket button */
+
+.button {
+    font-family: 'Inria Serif', serif;
+    font-size: 30px;
+    display: block;
+    margin: 10px 267px;
+    height: fit-content ;
+    width: fit-content;
+    background: rgb(255, 138, 58);
+    border-radius: 25px;
+    padding: 5px 40px;
+    color: white;
+    text-decoration: none;
+}
+
+/* Overview */
+
+.overviewContainer {
+    padding: 60px 230px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftOverview {
+    width: 60%;
+}
+
+.leftOverview h2 {
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+.leftOverview span {
+    color:  rgb(255, 138, 58);
+}
+
+.rightOverview {
+    width: auto;
+}
+
+.rightOverview p {
+    margin-top: 8px;
+    font-family: 'Inria Serif', serif;
+    font-size: 20px;
+}
+
+.rightOverview p i {
+    margin-right: 15px;
+}
+
+.rightOverview span {
+    text-decoration: underline;
+}
+
+#overviewAddress {
+    padding-top: 0%;    
+    text-align: right;
+    text-decoration: none;
+}
+
+#overviewAddress i {
+    color: black;
+}
+
+#rightOverviewLine {
+    margin-top: 25px;
+}
+
+
+/* Exhibition Section */
+
+#exhibition {
+    padding: 0px 0px;
+}
+
+#exhibition h3 {
+    font-family: 'Inria Serif', serif;
+    font-size: 82px;
+    font-weight: bold;
+    padding-left: 28%;
+    letter-spacing: 32px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
+    margin: 0 3%;
+}
+
+.gridList {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.titleandtext img {
+    display: flex;
+    align-self: center;
+    width: 70%;
+    height: 62vh;
+    margin-bottom: 2%;
+}
+
+.titleandtext{
+    display: flex;
+        flex-direction: column;
+    text-align: center;
+}
+.gridList h4 {
+    font-family: 'Inria Serif', serif;
+    font-size: 45px;
+    font-weight: 100;
+}
+
+.gridList p {
+    padding: 10px 150px;
+    font-size: 20px;
+    text-align: center;
+    width: 100%;
+}
+
+/* Account Promotion */
+#member {
+    margin-top: 60px;
+    width: 100%;
+    height: 320px;
+    display: flex;  /* Make flex container */ 
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    background-image: url(/test-project/media/pic1.png);
+    background-size: 100%;
+}
+
+
+
+.container1 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 210px;
+    margin:  auto;
+    background: rgba(0, 0, 0, 0.527);
+}
+
+.left {
+    display: flex;
+    align-self: center;
+}
+
+.left h2 {
+    font-family: 'Inria Serif', serif;
+    font-size: 70px;
+    font-weight: 100;
+    opacity: 1;
+}
+
+.left span {
+    color:  rgb(255, 138, 58);
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: start;
+    padding-top: 55px;
+}
+
+.right p {
+    font-family: 'Inria Serif', serif;
+    font-weight: 100;
+    font-size: 20px;
+    width: 700px;
+    height: 50px;
+    word-spacing: 15px;
+}
+
+.btn {
+    display: block;
+    margin-top: 10px;
+    width: 240px;
+    height: 45px;
+    background:rgb(255, 138, 58);
+    color: white;
+    padding: 7px;
+    font-family: 'Inria Serif', serif;
+    font-size: 23px;
+    text-align: center;
+    word-spacing: normal;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    font-weight: bold;
+    background:rgb(170, 91, 39);
+}
+
+/* Contact Page */
+
+.container2 {
+    padding: 70px 90px;
+}
+
+.contactLeft {
+    flex-basis: 35%;
+}
+
+.contactLeft h2{
+    font-family: 'Inria Serif', serif;
+    font-size: 75px;
+}
+
+.contactLeft span {
+    color: rgb(255, 138, 58);
+}
+
+.contactIcons {
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+.contactIcons i {
+    color: rgb(255, 138, 58);
+    font-size: 40px;
+    margin-right: 15px;
+    /* align the text to be in the middle of the icons */
+    vertical-align: middle; 
+}
+
+.contactIcons a {
+    font-family: 'Inria Serif', serif;
+    font-size: 22px;
+    color: white;
+}
+
+.contactRight {
+    flex-basis: 60%;
+}
+
+.contactRight form {
+    width: 100%;
+    overflow: hidden;
+    margin-top: -182px;
+}
+
+form input, form textarea {
+    float: right;
+    clear: both;
+    width: 65%;
+    border: 0;
+    outline: none;
+    background: rgb(48, 48, 48);
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-end-end-radius: 6px;
+}
+
+form button {
+    float: right;
+    clear: both;
+
+}
