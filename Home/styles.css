@@ -22,7 +22,7 @@ body {
 }
 
 #header{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -37,6 +37,7 @@ body {
     padding-top: 2vw;
     padding-bottom: 2vw;
     background-image: url(../media/homePicture1.jpg);
+    background-size: 100vw;
 }
 
 .hero {
@@ -60,14 +61,15 @@ li {
     display: inline-block;
     list-style: none;
     /* horizontal spacing between li */
-    margin: 5px 75px;
+    margin: 0.5vw 7vw;
 }
 
 a {
     font-family: 'Inria Sans', sans-serif;
     color: rgb(181, 181, 181);
     text-decoration: none;
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 2vw;
     position: relative;
     padding: 0 0;
 }
@@ -77,10 +79,10 @@ a:after {
     content: "";
     position: absolute;
     background-color: rgb(255, 138, 58);
-    height: 6px;
+    height: 0.4vw;
     width: 0;
     left: 0 ;
-    bottom: -6px;
+    bottom: -0.6vh;
     transition: 0.3s;
 }
 
@@ -94,7 +96,7 @@ a:after {
 
 .homeTitle {
     display: flex;
-    margin-top: 70px;
+    margin-top: 15vh;
     text-align: center;
     align-items: center;
 }
@@ -102,7 +104,7 @@ a:after {
 
 .homeTitle h1 {
     font-family: 'Inria Serif', serif;
-    font-size: 75px;
+    font-size: 7vw;
     font-weight: lighter;
     color: white;
 }
@@ -112,7 +114,7 @@ a:after {
     font-weight: bolder;
     line-height: 0.7;
     text-shadow: 4px 6px 4px black;
-    font-size: 110px;
+    font-size: 9vw;
     color:  rgb(255, 138, 58);
 }
 
@@ -126,7 +128,7 @@ a:after {
 .homeDescription p {
     font-family: 'Inria Serif', serif;
     color: white;
-    font-size: 30px;
+    font-size: 2.2vw;
 }
 
 .homeDescription span {
@@ -138,22 +140,26 @@ a:after {
 
 .button {
     font-family: 'Inria Serif', serif;
-    font-size: 30px;
-    display: block;
-    margin: 10px 267px;
-    height: fit-content ;
-    width: fit-content;
+    font-size: 2.5vw;
+    margin: 0.5vw 22vw;
     background: rgb(255, 138, 58);
     border-radius: 25px;
-    padding: 5px 40px;
+    padding: 0.4vw 4vw;
     color: white;
     text-decoration: none;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    font-weight: bold;
+    background:rgb(170, 91, 39);
 }
 
 /* Overview */
 
 .overviewContainer {
-    padding: 60px 230px;
+    padding: 5vw 7vw;
 }
 
 .row {
@@ -168,7 +174,7 @@ a:after {
 .leftOverview h2 {
     font-family: 'Inria Serif', serif;
     font-weight: bold;
-    font-size: 38px;
+    font-size: 2vw;
 }
 
 .leftOverview span {
@@ -182,11 +188,11 @@ a:after {
 .rightOverview p {
     margin-top: 8px;
     font-family: 'Inria Serif', serif;
-    font-size: 20px;
+    font-size: 2vw;
 }
 
 .rightOverview p i {
-    margin-right: 15px;
+    margin-right: 1vw;
 }
 
 .rightOverview span {
@@ -204,7 +210,7 @@ a:after {
 }
 
 #rightOverviewLine {
-    margin-top: 25px;
+    margin-top: 3vw;
 }
 
 
@@ -220,14 +226,15 @@ a:after {
 
 #exhibition h3 {
     font-family: 'Inria Serif', serif;
-    font-size: 82px;
+    font-size: 4vw;
     font-weight: bold;
-    letter-spacing: 32px;
+    letter-spacing: 2vw;
 }
 .grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5vw;
     margin: 0 3%;
 }
 
@@ -252,32 +259,32 @@ a:after {
 }
 .gridList h4 {
     font-family: 'Inria Serif', serif;
-    font-size: 45px;
+    font-size: 3.7vw;
     font-weight: 100;
 }
 
 .gridList p {
-    padding: 10px 150px;
-    font-size: 20px;
+    padding: 10px 15vh;
+    font-size: 1.4vw;
     text-align: center;
     width: 100%;
 }
 
 /* Account Promotion */
 #member {
-    margin-top: 50px;
+    margin-top: 5vw;
     width: 100%;
     background-image: url(../media/pic1.png);
-    background-size: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    background-size: 100vw 70vh;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
 }
 
 .container1 {
     display: flex;
-    padding: 50px;
+    padding: 5vw;
     background: rgba(0, 0, 0, 0.5);
-    gap: 20px;
+    gap: 2vw;
 }
 
 .left {
@@ -288,7 +295,7 @@ a:after {
 
 .left h2 {
     font-family: 'Inria Serif', serif;
-    font-size: 70px;
+    font-size: 5vw;
     font-weight: 100;
     opacity: 1;
 }
@@ -307,23 +314,24 @@ a:after {
 .right p {
     font-family: 'Inria Serif', serif;
     font-weight: 100;
-    font-size: 20px;
-    width: 700px;
-    height: 50px;
-    word-spacing: 15px;
+    font-size: 1.5vw;
+    width: 50vw;
+    height: 4vw;
+    word-spacing: 1vw;
 }
 
 .btn {
-    display: block;
-    margin-top: 10px;
-    width: 240px;
-    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    width: 17vw;
+    height: 3vw;
     background:rgb(255, 138, 58);
     color: white;
-    padding: 7px;
+    padding: 1vw;
     font-family: 'Inria Serif', serif;
-    font-size: 23px;
-    text-align: center;
+    font-size: 1.7vw;
     word-spacing: normal;
     transition: font-weight 0.1s;
     transition: background 0.3s;
@@ -346,7 +354,7 @@ a:after {
 .contactLeft h2{
     font-family: 'Inria Serif', serif;
     font-size: 400%;
-    margin-bottom: 30px;
+    margin-bottom: 5vh;
 }
 
 .contactLeft span {
@@ -354,21 +362,21 @@ a:after {
 }
 
 .contactIcons {
-    padding-top: 10px;
-    padding-left: 20px;
+    padding-top: 1vh;
+    padding-left: 2vh;
 }
 
 .contactIcons i {
     color: rgb(255, 138, 58);
-    font-size: 40px;
-    margin-right: 15px;
+    font-size: 4vh;
+    margin-right: 1.5vh;
     /* align the text to be in the middle of the icons */
     vertical-align: middle; 
 }
 
 .contactIcons a {
     font-family: 'Inria Serif', serif;
-    font-size: 22px;
+    font-size: 1.7vw;
     color: white;
 }
 
@@ -388,11 +396,10 @@ form input, form textarea {
     border: 0;
     outline: none;
     background: rgb(48, 48, 48);
-    padding: 15px;
-    margin: 15px 0;
+    padding: 1vw;
+    margin: 1vw 0;
     color: white;
-    font-size: 18px;
-    border-end-end-radius: 6px;
+    font-size: 1.5vw;
 }
 
 form button {
