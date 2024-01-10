@@ -23,7 +23,7 @@ body {
 
 #header{
     width: 100vw;
-    height: 100vh;
+    height: 90vh;
     background-size: cover;
     background-position: center;
 }
@@ -104,7 +104,7 @@ a:after {
 
 .homeTitle h1 {
     font-family: 'Inria Serif', serif;
-    font-size: 7vw;
+    font-size: 5vw;
     font-weight: lighter;
     color: white;
 }
@@ -114,7 +114,7 @@ a:after {
     font-weight: bolder;
     line-height: 0.7;
     text-shadow: 4px 6px 4px black;
-    font-size: 9vw;
+    font-size: 6vw;
     color:  rgb(255, 138, 58);
 }
 
@@ -128,7 +128,7 @@ a:after {
 .homeDescription p {
     font-family: 'Inria Serif', serif;
     color: white;
-    font-size: 2.2vw;
+    font-size: 1.7vw;
 }
 
 .homeDescription span {
@@ -140,11 +140,11 @@ a:after {
 
 .button {
     font-family: 'Inria Serif', serif;
-    font-size: 2.5vw;
-    margin: 0.5vw 22vw;
+    font-size: 1.7vw;
+    margin: 0.5vw 20vw;
     background: rgb(255, 138, 58);
     border-radius: 25px;
-    padding: 0.4vw 4vw;
+    padding: 0.4vw 3vw;
     color: white;
     text-decoration: none;
     transition: font-weight 0.1s;
@@ -174,7 +174,7 @@ a:after {
 .leftOverview h2 {
     font-family: 'Inria Serif', serif;
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 2vw;
 }
 
 .leftOverview span {
@@ -186,9 +186,8 @@ a:after {
 }
 
 .rightOverview p {
-    margin-top: 8px;
     font-family: 'Inria Serif', serif;
-    font-size: 2vw;
+    font-size: 1.5vw;
 }
 
 .rightOverview p i {
@@ -200,7 +199,6 @@ a:after {
 }
 
 #overviewAddress {
-    padding-top: 0%;    
     text-align: right;
     text-decoration: none;
 }
@@ -217,7 +215,6 @@ a:after {
 /* Exhibition Section */
 
 #exhibition {
-    padding: 0px 0px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -226,7 +223,7 @@ a:after {
 
 #exhibition h3 {
     font-family: 'Inria Serif', serif;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: bold;
     letter-spacing: 2vw;
 }
@@ -234,7 +231,7 @@ a:after {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 5vw;
+    padding-top: 4vw;
     margin: 0 3%;
 }
 
@@ -247,8 +244,8 @@ a:after {
 .titleandtext img {
     display: flex;
     align-self: center;
-    width: 70%;
-    height: 62vh;
+    width: 60%;
+    height: 55vh;
     margin-bottom: 2%;
 }
 
@@ -295,7 +292,7 @@ a:after {
 
 .left h2 {
     font-family: 'Inria Serif', serif;
-    font-size: 5vw;
+    font-size: 4vw;
     font-weight: 100;
     opacity: 1;
 }
