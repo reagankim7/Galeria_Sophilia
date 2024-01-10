@@ -28,6 +28,7 @@ body {
     background-position: center;
 }
 
+
 .container {
     /* placement of list to be centered */
     display: flex;
@@ -68,8 +69,7 @@ a {
     font-family: 'Inria Sans', sans-serif;
     color: rgb(181, 181, 181);
     text-decoration: none;
-    /* font-size: 20px; */
-    font-size: 2vw;
+    font-size: 1.5vw;
     position: relative;
     padding: 0 0;
 }
