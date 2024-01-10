@@ -28,21 +28,19 @@ body {
     background-position: center;
 }
 
-
-
 .container {
     /* placement of list to be centered */
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    border-bottom: 5px solid orange;
+    background-image: url(../media/homePicture1.jpg);
 }
 
 .hero {
     display: flex;
-    background-image: url(../media/homePicture1.jpg);
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -69,7 +67,7 @@ a {
     font-family: 'Inria Sans', sans-serif;
     color: rgb(181, 181, 181);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     position: relative;
     padding: 0 0;
 }
@@ -96,7 +94,7 @@ a:after {
 
 .homeTitle {
     display: flex;
-    margin-top: 50px;
+    margin-top: 70px;
     text-align: center;
     align-items: center;
 }
@@ -269,9 +267,6 @@ a:after {
 #member {
     margin-top: 50px;
     width: 100%;
-    display: flex;  /* Make flex container */ 
-    justify-content: center;  /* Center horizontally */
-    align-items: center;  /* Center vertically */
     background-image: url(../media/pic1.png);
     background-size: 100%;
     padding-top: 20px;
@@ -280,16 +275,15 @@ a:after {
 
 .container1 {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin:  auto;
-    padding: 20px;
+    padding: 50px;
     background: rgba(0, 0, 0, 0.5);
+    gap: 20px;
 }
 
 .left {
     display: flex;
-    align-self: center;
+    align-items: center;
+    padding-left: 5vw;
 }
 
 .left h2 {
@@ -305,9 +299,9 @@ a:after {
 
 .right {
     display: flex;
+    flex-direction: column;
     justify-content: flex-end;
     align-items: start;
-    padding-top: 55px;
 }
 
 .right p {
