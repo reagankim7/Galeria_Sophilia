@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inria Serif', serif;
+}
+
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.body {
+    background-color: black;
+}
+
+#header{
+    background-color: black;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.container {
+    /* placement of list to be centered */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    background-size: 100vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    /* horizontal spacing between li */
+    margin: 0.5vw 7vw;
+}
+
+a {
+    font-family: 'Inria Sans', sans-serif;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
+    font-size: 1.5vw;
+    position: relative;
+    padding: 0 0;
+}
+
+/* animation for hover */
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 138, 58);
+    height: 0.4vw;
+    width: 0;
+    left: 0 ;
+    bottom: -0.6vh;
+    transition: 0.3s;
+}
+
+.homeHeader a:hover {
+    color: white;
+}
+
+.homeHeader :hover:after {
+    width: 100%;
+}
+
+
+/* content */
+
+.productContainer {
+    display: block;
+    padding-left: 16vh;
+}
+
+.productBlocking {
+    display: flex;
+    flex-direction: row;
+    max-width: 170vh;
+    background-color: aqua;
+}
+
+/* left side */
+.left {
+    width: 36%;
+}
+
+.img img{
+    width: 58vh;
+
+}
+
+.imgdesc {
+    padding-top: 2.5vh;
+}
+
+.br {
+    padding-top: 500px;
+}
+
+.imgdesc h2 {
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.imgdesc p {
+    font-size: 1.8vh;
+}
+
+/* right side */
+
+.right{
+    margin-left: 12vh;
+    width: 55%;
+    background-color: brown;
+}
+
+.box {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxContent{
+    max-width: 27vh;
+    background-color: green;
+}
+
+.boximg img {
+    max-width: 27vh;
+}
