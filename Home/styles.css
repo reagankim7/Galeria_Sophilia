@@ -45,7 +45,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     gap: 3vw;
     padding-bottom: 5vw;
 }
@@ -112,7 +112,7 @@ a:after {
     font-family: 'Inria Serif', serif;
     font-weight: bolder;
     line-height: 0.7;
-    text-shadow: 4px 6px 4px black;
+    text-shadow: 0.5vh 0.6vh 0.5vh black;
     font-size: 6vw;
     color:  rgb(255, 138, 58);
 }
@@ -244,7 +244,7 @@ a:after {
     display: flex;
     align-self: center;
     width: 60%;
-    height: 55vh;
+    height: 50vh;
     margin-bottom: 2%;
 }
 

@@ -6,14 +6,24 @@
     font-family: 'Inria Serif', serif;
 }
 
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+}
+
 body {
     background: black;
     color: white;
 }
 
 #header{
-    width: 100%;
-    height: 100vh;
+    width: 100vw;
+    height: 90vh;
     background-image: url(../media/homePicture1.jpg);
     background-size: cover;
     background-position: center;
@@ -26,7 +36,6 @@ body {
     align-items: center;
     padding-top: 2vw;
     padding-bottom: 2vw;
-    border-bottom: 5px solid orange;
 }
 
 nav {
@@ -40,14 +49,14 @@ li {
     display: inline-block;
     list-style: none;
     /* horizontal spacing between li */
-    margin: 5px 75px;
+    margin: 0.5vw 7vw;
 }
 
 a {
     font-family: 'Inria Sans', sans-serif;
     color: rgb(181, 181, 181);
     text-decoration: none;
-    font-size: 30px;
+    font-size: 1.5vw;
     position: relative;
     padding: 0 0;
 }
@@ -57,10 +66,10 @@ a:after {
     content: "";
     position: absolute;
     background-color: rgb(255, 138, 58);
-    height: 6px;
+    height: 0.4vw;
     width: 0;
     left: 0 ;
-    bottom: -6px;
+    bottom: -0.6vh;
     transition: 0.3s;
 }
 
@@ -76,6 +85,11 @@ a:after {
     margin-top: 7%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.gallery_title{
+    font-size: 2.5vw;
+    text-shadow: 0.5vh 0.6vh 0.5vh black;
 }
 
 .leftSide, .rightSide {
