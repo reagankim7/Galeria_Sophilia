@@ -84,6 +84,11 @@ a:after {
 /* Europe Gallery */
 
 /* The box */
+
+.collection_highlights_title {
+    padding-left: 5vw;
+}
+
 .container0 {
     position: absolute;
     left: 50%;
@@ -95,18 +100,14 @@ a:after {
     background-color: gray;
 }
 
-.europe{
-    overflow: hidden;
-}
-
 #slide {
     width: max-content;
     margin-top: 50px;
 }
 
 .item {
-    width: 200px;
-    height: 300px;
+    width: 15vw;
+    height: 40vh;
     background-position: 50% 50%;
     display: inline-block;
     transition: 0.5s;
@@ -114,7 +115,7 @@ a:after {
     position: absolute;
     z-index: 1;
     top: 50%;
-    transform: translate(0, -50%);
+    transform: translate(20%, -50%);
     border-radius: 10px;
     box-shadow: 0 30px 50px #313131;
 }
@@ -150,8 +151,8 @@ a:after {
 .item .content {
     position: absolute;
     top: 50%;
-    left: 100px;
-    width: 300px;
+    left: 8vw;
+    width: 30vw;
     text-align: left;
     padding: 0;
     color: white;
@@ -183,6 +184,13 @@ a:after {
     border: none;
     opacity: 0;    
     animation: showcontent 1.3s ease-in-out forwards;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+.item button:hover {
+    cursor: pointer;
+    background-color: rgb(200, 200, 200);
 }
 
 @keyframes showcontent {
@@ -200,7 +208,7 @@ a:after {
 
 .buttons {
     position: absolute;
-    bottom: 30px;
+    bottom: 2vh;
     z-index: 222222;
     text-align: center;
     width: 100%;
@@ -208,8 +216,8 @@ a:after {
 
 /* next and prev buttons */
 .buttons button {
-    width: 50px;
-    height: 50px;
+    width: 3vw;
+    height: 3vw;
     border-radius: 50%;
     background-color: whitesmoke;
     border: 1px solid rgb(255, 138, 58);
@@ -224,4 +232,146 @@ a:after {
     color: rgb(255, 138, 58);
 }
 
+/* Section 2 */
+.box {
+    width: 100vw;
+    height: 55vh;
+}
 
+.section_2{
+    padding: 3vw;
+    display: flex;
+}
+
+.left{
+    padding-left: 5vw;
+}
+
+.left > h1 {
+    font-size: 5vh;
+}
+
+.left > h1 > span {
+    color: rgb(255, 138, 58);
+
+}
+
+.left > p {
+    font-size: 2vw;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8vh;
+    gap: 3vh;
+}
+
+/* Ticket button */
+
+.button {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.7vw;
+    margin: 0.5vw 20vw;
+    background: rgb(255, 138, 58);
+    border-radius: 25px;
+    padding: 0.4vw 3vw;
+    color: white;
+    text-decoration: none;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    font-weight: bold;
+    background:rgb(170, 91, 39);
+}
+
+/* Contact Page */
+
+.contactContainer {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding : 5vw;
+    background-color: #313131;
+}
+
+.contactLeft h2{
+    font-family: 'Inria Serif', serif;
+    font-size: 400%;
+    margin-bottom: 5vh;
+}
+
+.contactLeft span {
+    color: rgb(255, 138, 58);
+}
+
+.contactIcons {
+    padding-top: 1vh;
+    padding-left: 2vh;
+}
+
+.contactIcons i {
+    color: rgb(255, 138, 58);
+    font-size: 4vh;
+    margin-right: 1.5vh;
+    /* align the text to be in the middle of the icons */
+    vertical-align: middle; 
+}
+
+.contactIcons a {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.7vw;
+    color: white;
+}
+
+.contactRight {
+    flex-basis: 60%;
+}
+
+.contactRight form {
+    width: 100%;
+    overflow: hidden;
+}
+
+form input, form textarea {
+    float: right;
+    clear: both;
+    width: 65%;
+    border: 0;
+    outline: none;
+    background: rgb(48, 48, 48);
+    border: 1px solid white;
+    padding: 1vw;
+    margin: 1vw 0;
+    color: white;
+    font-size: 1.5vw;
+}
+
+form button {
+    float: right;
+    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    width: 17vw;
+    height: 3vw;
+    background:rgb(255, 138, 58);
+    color: white;
+    padding: 1vw;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.7vw;
+    word-spacing: normal;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+form button:hover {
+    cursor: pointer;
+    font-weight: bold;
+    background:rgb(170, 91, 39);
+}
