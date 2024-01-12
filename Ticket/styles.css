@@ -87,27 +87,30 @@ a:after {
 
 .productContainer {
     display: block;
+    height: 300vh;
     padding-left: 16vh;
+    /* background-color: bisque; */
 }
 
 .productBlocking {
     display: flex;
     flex-direction: row;
-    max-width: 170vh;
-    background-color: aqua;
+    max-width: 180vh;
+    /* background-color: aqua; */
 }
 
 /* left side */
 .left {
     width: 36%;
+    /* background-color: yellowgreen; */
 }
 
 .img img{
     width: 58vh;
-
 }
 
 .imgdesc {
+    color: white;
     padding-top: 2.5vh;
 }
 
@@ -116,33 +119,93 @@ a:after {
 }
 
 .imgdesc h2 {
+    color: white;
     font-family: 'Inria Serif', serif;
     font-weight: bold;
     font-size: 2.5vh;
 }
 
 .imgdesc p {
+    color: white;
     font-size: 1.8vh;
 }
 
 /* right side */
 
 .right{
+    display: flex;
     margin-left: 12vh;
     width: 55%;
-    background-color: brown;
+    /* background-color: brown; */
 }
 
-.box {
+.ticketContainer {
+    margin-top: 0.3vh;
+    margin-left: 1.5vh;
+    width: 90vh;
+    /* background-color: blue;
+    border-width: 0.4vh;
+    border-radius: 1vh;
+    border-style: solid;
+    border-color: rgb(255, 138, 58); */
+}
+
+.ticketContainer h1 {
+    color: white;
+    font-size: 2.5vh;
+    font-weight: bold;
+}
+
+
+
+/* grid */
+
+.grid {
+    display: grid;
+    gap: 2vh 5vh;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.ticketBox{
+    background-color: black;
+    border-radius: 1vh;
+}
+
+.ticketHead img {
+    width: 100%;
+}
+
+.ticketBody {
+    padding-top: 3vh;
+    text-align: center;
+}
+
+.ticketBody h2{
+    font-size: 2.3vh;
+    color: rgb(255, 138, 58);
+}
+
+.ticketBody span {
+    color: white;
+}
+
+.ticketFooter {
+    text-decoration: none;
+    padding: 1vh;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
-.boxContent{
-    max-width: 27vh;
-    background-color: green;
+.ticketFooter p{
+    font-size: 1.2vh;
+    line-height: 0.1em;
 }
 
-.boximg img {
-    max-width: 27vh;
+.ticketFooter h3 {
+    font-size: 1.8vh;
+    line-height: 0.1em;
+}
+
+.rightFooter {
+    text-align: right;
 }

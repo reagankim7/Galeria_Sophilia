@@ -11,6 +11,16 @@ body {
     color: white;
 }
 
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+}
+
 #header{
     width: 100%;
     height: 100vh;
@@ -83,9 +93,7 @@ a:after {
     background-color: gray;
 }
 
-.europe{
-    overflow: hidden;
-}
+
 
 #slide {
     width: max-content;
@@ -212,4 +220,188 @@ a:after {
     color: rgb(255, 138, 58);
 }
 
+.box {
+    width: 100vw;
+    height: 55vh;
+}
 
+.section_2{
+    padding: 3vw;
+    margin-top: 15vh;
+    display: flex;
+}
+
+.left{
+    padding-left: 5vw;
+}
+
+.left > h1 {
+    font-size: 5vh;
+}
+
+.left > h1 > span {
+    color: rgb(255, 138, 58);
+
+}
+
+.left > p {
+    font-size: 1vw;
+    text-align: left;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 8vh;
+    gap: 3vh;
+}
+
+/* Ticket button */
+
+.button {
+    font-family: 'Inria Serif', serif;
+    font-size: 1.7vw;
+    margin: 0.5vw 20vw;
+    background: rgb(255, 138, 58);
+    border-radius: 25px;
+    padding: 0.4vw 3vw;
+    color: white;
+    text-decoration: none;
+    transition: font-weight 0.1s;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    font-weight: bold;
+    background:rgb(170, 91, 39);
+}
+
+/* Feature Section */
+
+.feature {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: aquamarine; */
+}
+
+.featureheader {
+    padding-top: 15vh;
+    width: 100vw;
+    text-align: center;
+}
+
+.featureheader h3{
+    font-size: 2vh;
+}
+
+.featureheader h3 span {
+    font-size: 5vh;
+    color: rgb(255, 138, 58) ;
+}
+
+.box1 {
+    /* background-color: yellowgreen; */
+    width: 80%;
+    margin-left: 19.3vh;
+    padding-top: 7vh;
+}
+
+.featurebox {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.boxitem {
+    display: flex;
+    width: 30vh;
+    height: 40vh;
+    background-color: black;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/1/1f/Michelangelo%27s_Pieta_5450_cropncleaned_edit.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.boxitem1 {
+    display: flex;
+    width: 30vh;
+    height: 40vh;
+    background-color: black;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/test-project/media/Cover-Sophilia-1160x653.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.boxitem2 {
+    display: flex;
+    width: 30vh;
+    height: 40vh;
+    background-color: black;
+    border-radius: 1vh;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/test-project/media/img0.jpg);
+}
+
+.itemchild h2, p {
+    text-shadow: 2px 2px 4px #000000;
+    text-align: center;
+}
+
+.itemchild h2 {
+    font-weight: lighter;
+    font-size: 3.5vh;
+}
+
+.itemchild p {
+    color: rgb(255, 138, 58) ;
+    font-weight: bolder;
+}
+
+
+hr {
+    margin-left: 15vh;
+    width: 88%;   
+}
+
+/* Bottom of Page */
+
+.bottomPage {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    background-image: url(/test-project/media/newmask.png);
+}
+
+.bottomHeader{
+    display: flex;
+    justify-content: space-between;
+    width: 80vw;
+    height: 25vh;
+}
+
+.bottomBox {
+    display: flex;
+    width: 35vw;
+    background-color: black;
+}
+
+.boxLeft {
+    font-size: 8vh;
+}
+
+.boxRight {
+    padding-left: 3vh;
+}
+
+.boxRight p{
+    text-align: justify;
+}
