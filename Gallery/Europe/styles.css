@@ -19,6 +19,7 @@
 body {
     background: black;
     color: white;
+    overflow-x: hidden;
 }
 
 #header{
@@ -288,6 +289,54 @@ a:after {
     font-weight: bold;
     background:rgb(170, 91, 39);
 }
+
+/* Bottom Part */
+.bottompart {
+    display: flex;
+    padding: 5vw;
+    justify-content: center;
+    gap: 7vw;
+}
+
+.btm-images {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2vh;
+}
+
+.btm-images > img {
+    width: 25vw;
+    height: 40vh;
+    object-fit: cover;
+    opacity: 50%;
+    border-top-right-radius: 50%;
+    border-top-left-radius: 50%;
+}
+
+.btptitle {
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.btpdes {
+    font-size: 2.5vh;
+}
+
+.btpbutton {    
+    padding: 0.5vh;
+    padding-left : 2vh;
+    padding-right : 2vh;
+    color: white;
+    background-color: gray;
+    border-radius: 2vw;
+}
+
+.btpbutton:hover {
+    background-color: darkgray;
+}
+
 
 /* Contact Page */
 
