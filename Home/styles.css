@@ -23,7 +23,7 @@ body {
 
 #header{
     width: 100vw;
-    height: 90vh;
+    height: 100vh;
     background-size: cover;
     background-position: center;
 }
@@ -47,6 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     width: 100%;
+    height: 90vh;
     gap: 3vw;
     padding-bottom: 5vw;
 }
@@ -245,7 +246,7 @@ a:after {
     display: flex;
     align-self: center;
     width: 60%;
-    height: 55vh;
+    height: 45vh;
     margin-bottom: 2%;
 }
 
@@ -273,8 +274,8 @@ a:after {
     width: 100%;
     background-image: url(../media/pic1.png);
     background-size: 100vw 70vh;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .container1 {
