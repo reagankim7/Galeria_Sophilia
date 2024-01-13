@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inria Sans', sans-serif;
+    font-family: 'Inria Serif', serif;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 50vh;
+    height: 100vh; 
+    background-image: url(/test-project/media/RegisBackgroundImg\ 1.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.box.form-box {
+    display: flex;
+    flex-direction: column;
+    width: 43vh;
+    height: 57vh;
+    background-color: rgba(22, 21, 21, 0.8);
+}
+
+.header {
+    padding-top: 5vh;
+    text-align: center;
+}
+
+.header h1 {
+    font-family: 'Inria Serif', serif;
+    color: white;
+    font-size: 7vh;
+    font-weight: lighter;
+}
+
+.forms {
+    padding-top: 7vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.forms1 {
+    padding-top: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formField {
+    display: flex;
+    justify-content: center;
+    width: 35vh;
+}
+
+.formField input{
+    width: 54%;
+    height: 5.5vh;
+    border-radius: 0.5vh;
+}
+
+.formField1 {
+    display: flex;
+    justify-content: center;
+    width: 35vh;
+}
+
+.formField1 input {
+    width: 63%;
+    height: 6vh;
+    border-radius: 0.5vh;
+    text-align: center;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    text-align: center;
+  }
+
+.formField1 input:hover {
+    width: 63%;
+    height: 6vh;
+    border-radius: 0.5vh;
+    color: white;
+    background-color: rgb(255, 138, 58);
+    transition: 0.3s;
+    cursor: grab;
+}
+
+.links {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.links h2 {
+    color: white;
+    font-size: 2.2vh;
+    font-weight: lighter;
+}
+
+.links a {
+    font-size: 2.2vh;
+    color: rgb(255, 138, 58);
+    text-decoration-color: rgb(255, 138, 58);
+}
+
+.message{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column ;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* home */
+
+.homeBody {
+    background-color: black;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    line-height: 60px;
+    z-index: 100;
+}
+
+.logo a{
+    font-family: 'Inria Serif', serif;
+    font-size: 4vh;
+    color: white;
+    text-decoration-color: white;
+}
+
+.logo span {
+    color: rgb(255, 138, 58);
+}
+
+.butn {
+    width: 10vh;
+    height: 3vh;
+}
+
+.butn:hover {
+    background-color: rgb(255, 138, 58);
+    cursor: grab;
+}
+
+.profileBox {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 7vh;
+}
+
+.box {
+    color: white;
+    font-size: 2vh;
+    width: 70vh;
+    height: 30vh;
+    /* border: 0.5vh solid white; */
+    border-radius: 1vh;
+}

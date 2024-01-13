@@ -166,7 +166,22 @@ a:after {
     grid-template-columns: 1fr 1fr 1fr;
 }
 
+.gridlist {
+    padding: 1vh 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gridlist:hover {
+    cursor: pointer;
+    background-color: rgba(131, 131, 131, 0.3);
+    transition: 0.3s;
+    border-radius: 1vh;
+}
+
 .ticketBox{
+    border: 1px solid orange;
     background-color: black;
     border-radius: 1vh;
 }
