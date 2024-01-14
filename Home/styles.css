@@ -274,13 +274,15 @@ a:after {
     width: 100%;
     background-image: url(../media/pic1.png);
     background-size: 100vw 70vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 .container1 {
     display: flex;
-    padding: 3vw;
+    padding: 5vw;
     background: rgba(0, 0, 0, 0.5);
-    gap: 2vw;
+    gap: 8vw;
 }
 
 .left {
