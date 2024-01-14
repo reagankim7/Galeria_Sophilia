@@ -274,13 +274,11 @@ a:after {
     width: 100%;
     background-image: url(../media/pic1.png);
     background-size: 100vw 70vh;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
 }
 
 .container1 {
     display: flex;
-    padding: 5vw;
+    padding: 3vw;
     background: rgba(0, 0, 0, 0.5);
     gap: 2vw;
 }
@@ -293,7 +291,7 @@ a:after {
 
 .left h2 {
     font-family: 'Inria Serif', serif;
-    font-size: 4vw;
+    font-size: 3vw;
     font-weight: 100;
     opacity: 1;
 }
@@ -312,7 +310,7 @@ a:after {
 .right p {
     font-family: 'Inria Serif', serif;
     font-weight: 100;
-    font-size: 1.5vw;
+    font-size: 1.3vw;
     width: 50vw;
     height: 4vw;
     word-spacing: 1vw;
@@ -324,12 +322,11 @@ a:after {
     align-items: center;
     margin-top: 1vw;
     width: 17vw;
-    height: 3vw;
     background:rgb(255, 138, 58);
     color: white;
-    padding: 1vw;
+    padding: 0.5vw;
     font-family: 'Inria Serif', serif;
-    font-size: 1.7vw;
+    font-size: 1.3vw;
     word-spacing: normal;
     transition: font-weight 0.1s;
     transition: background 0.3s;
