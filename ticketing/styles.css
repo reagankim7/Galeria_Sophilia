@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: 'Inria Sans', sans-serif;
     font-family: 'Inria Serif', serif;
+    background-color: black;
 }
 
 .container {
@@ -13,8 +14,87 @@ body {
     transition: transform 0.5s;
 }
 
+::-webkit-scrollbar {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: rgba(100, 100, 100, 0.5);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.navcontainer {
+    /* placement of list to be centered */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    /* horizontal spacing between li */
+    margin: 5px 75px;
+}
+
+a {
+    font-family: 'Inria Sans', sans-serif;
+    color: rgb(181, 181, 181);
+    text-decoration: none;
+    font-size: 30px;
+    position: relative;
+    padding: 0 0;
+}
+
+/* animation for hover */
+a:after {
+    content: "";
+    position: absolute;
+    background-color: rgb(255, 138, 58);
+    height: 6px;
+    width: 0;
+    left: 0 ;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+.homeHeader a:hover {
+    color: white;
+}
+
+.homeHeader :hover:after {
+    width: 100%;
+}
+
+.imgdesc h2 {
+    color: white;
+    font-family: 'Inria Serif', serif;
+    font-weight: bold;
+    font-size: 2.5vh;
+}
+
+.imgdesc span {
+    color: rgb(255, 138, 58);
+}
+
+.title{
+    color: white;
+    font-size: 2vh;
+}
+
 svg {
     width: 30px;
+    color: white;
 }
 header {
     display: flex;
@@ -31,7 +111,7 @@ header .icon-cart span{
     display: flex;
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: rgb(255, 138, 58);
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -43,7 +123,7 @@ header .icon-cart span{
 
 .listProduct .item img {
     width: 90%;
-    filter: drop-shadow(0 10px 15px rgb(255, 138, 58));
+    filter: drop-shadow(0 7px 15px rgb(255, 138, 58));
 }
 
 .listProduct {
@@ -53,23 +133,25 @@ header .icon-cart span{
 }
 
 .listProduct .item {
-    background-color: beige;
+    background-color: rgb(0, 0, 0);
     padding: 20px;
     border-radius: 20px;   
 }
 
 .listProduct .item h2{
+    color: white;
     font-weight: 500;
     font-size: large;
 }
 
 .listProduct .item .price {
+    color: white;
     letter-spacing: 5px;
     font-size: small;
 }
 
 .listProduct .item button{
-    background-color: black;
+    background-color: rgb(180, 95, 39);
     color: white;
     padding: 5px 10px;
     border-radius: 20px;
@@ -159,6 +241,34 @@ body.showCart .cartTab {
 .listcart::-webkit-scrollbar{
     width: 0;
 }
+
+.bottomEmail {
+    width: 90vh;
+    height: 21.4vh;
+    display: inline-flex;
+    flex-direction: column;
+    border: 2px solid rgb(255, 138, 58) ;
+    border-radius: 2vh;
+}
+
+.bottomEmail p {
+    margin-top: -1vh;
+    color: white;
+    font-weight: lighter;
+}
+
+.bottomEmail input {
+    width: 54%;
+    height: 3.4vh;
+    border-radius: 0.5vh;
+}
+
+.bottomEmail button {
+    width: 10vh;
+    height: 5vh;
+    background-color: rgb(255, 138, 58);
+}
+
 
 @media screen and (max-width: 992px) {
     .listProduct{

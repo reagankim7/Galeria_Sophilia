@@ -14,67 +14,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inria+Sans:wght@300;400&family=Inria+Serif:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="homeBody">
     <div class="nav">
         <div class="logo">
-            <a href="home.php"><p>logo</p></a>
+            <a href="/test-project/Home/home.html"><p>Galeria <span>Sophilia</span></p></a>
         </div>
         
         <div class="right-links">
-
             <?php
-                // 1st Procedure
-                // User input
-                $userId = $_SESSION['id'];
+            // 1st Procedure
+            // User input
+            $userId = $_SESSION['id'];
 
-                // Call the stored procedure
-                $sql = "CALL getCustomer(?)";
-                $stmt = $con->prepare($sql);
-                $stmt->bind_param("i", $userId);
-                $stmt->execute();
+            // Call the stored procedure
+            $sql = "CALL getCustomer(?)";
+            $stmt = $con->prepare($sql);
+            $stmt->bind_param("i", $userId);
+            $stmt->execute();
 
-                // Fetch the result
-                $result = $stmt->get_result();
-                if ($result->num_rows > 0) {
-                    while ($row = $result->fetch_assoc()) {
-                        $res_Uname = $row['username'];
-                        $res_Email = $row['email'];
-                        $res_id = $row['customerID'];
-
-                        echo "<a href='edit.php?customerID=$res_id'> Change Profile</a>";
-                    }
-                } else {
-                    echo "Customer not found";
+            // Fetch the result
+            $result = $stmt->get_result();
+            if ($result->num_rows > 0) {
+                while ($row = $result->fetch_assoc()) {
+                    $res_Uname = $row['username'];
+                    $res_Email = $row['email'];
+                    $res_id = $row['customerID'];
                 }
+            } else {
+                echo "Customer not found";
+            }
 
-                // Close connection
-                $stmt->close();
-                $con->close();
+            // Close connection
+            $stmt->close();
+            $con->close();
 
-            ?>
-            <a href="logout.php"><button class="btn">Log out</button></a>
+        ?>
+            <a href="index.html"><button class="butn">Log out</button></a>
         </div>
     </div>
-    <main>
-        <div class="main-box top">
-            <div class="top">
-                <div class="box">
-                    <p>Hello <b><?php echo $res_Uname ?></b>, Welcome</p>
-                </div>
-
-                <div class="box">
-                    <p>Your email is <b><?php echo $res_Email ?></b>, Welcome</p>
-                </div>
-            </div>
-
-            <div class="bottom">
-                <div class="box">
-                    <p>And you are hello</p>
-                </div>
-            </div>
+    <div class="profileBox">
+        <div class="box">
+            <p>Hello <b><?php echo $res_Uname ?></b>, Welcome</p>
         </div>
-    </main>
+        <div class="box">
+            <p>Your email is <b><?php echo $res_Email ?></b>, Welcome</p>
+        </div>
+    </div>
     
 </body>
 </html>

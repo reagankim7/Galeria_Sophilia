@@ -245,25 +245,25 @@ a:after {
 .titleandtext img {
     display: flex;
     align-self: center;
-    width: 60%;
-    height: 45vh;
+    width: 60vh;
+    height: 55vh;
     margin-bottom: 2%;
 }
 
 .titleandtext{
     display: flex;
-        flex-direction: column;
+    flex-direction: column;
     text-align: center;
 }
 .gridList h4 {
     font-family: 'Inria Serif', serif;
-    font-size: 3.7vw;
-    font-weight: 100;
+    font-size: 4.5vh;
+    font-weight: lighter;
 }
 
 .gridList p {
     padding: 10px 15vh;
-    font-size: 1.4vw;
+    font-size: 1.8vh;
     text-align: center;
     width: 100%;
 }
@@ -280,7 +280,7 @@ a:after {
 
 .container1 {
     display: flex;
-    padding: 5vw;
+    padding: 2vw;
     background: rgba(0, 0, 0, 0.5);
     gap: 8vw;
 }
