@@ -46,6 +46,7 @@ listProductHTML.addEventListener('click', (event) => {
     }
 })
 
+// add product to cart
 const addToCart = (product_id) => {
     let positionThisProductInCart = carts.findIndex((value) => value.product_id == product_id);
     if(carts.length <= 0){

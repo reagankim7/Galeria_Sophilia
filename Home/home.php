@@ -17,9 +17,9 @@
         <div class="container">
             <nav>
                 <ul class="homeHeader">
-                    <li><a href="#HOME">HOME</a></li>
+                    <li><a href="/sem3/test-project/home/home.php">HOME</a></li>
                     <li><a href="../Gallery/gallery.html">GALERIA</a></li>
-                    <li><a href="#">PROFILE</a></li>
+                    <li><a href="/sem3/test-project/profile/index.php">PROFILE</a></li>
                 </ul>
             </nav>
             <div class="hero">
@@ -31,7 +31,7 @@
                     <br>
                     <p><span>SUNDAY:</span> 12:00-15.00</p>
                 </div>
-                <a href="#" class="button">Tickets</a>
+                <a href="/sem3/test-project/ticketing/index.php" class="button">Tickets</a>
             </div>
         </div>
         

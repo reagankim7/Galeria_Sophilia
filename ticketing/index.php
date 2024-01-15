@@ -15,9 +15,9 @@
         <div class="navcontainer"> 
             <nav>
                 <ul class="homeHeader">
-                    <li><a href="../Home/home.html">HOME</a></li>
-                    <li><a href="#">GALERIA</a></li>
-                    <li><a href="/test-project/profile/index.html">PROFILE</a></li>
+                    <li><a href="/sem3/test-project/Home/home.php">HOME</a></li>
+                    <li><a href="/sem3/test-project/Gallery/gallery.html">GALERIA</a></li>
+                    <li><a href="/sem3/test-project/profile/index.php">PROFILE</a></li>
                 </ul>
             </nav>
         </div>

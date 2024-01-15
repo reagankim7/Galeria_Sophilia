@@ -21,7 +21,7 @@
 <body class="homeBody">
     <div class="nav">
         <div class="logo">
-            <a href="/test-project/Home/home.html"><p>Galeria <span>Sophilia</span></p></a>
+            <a href="/sem3/test-project/Home/home.php"><p>Galeria <span>Sophilia</span></p></a>
         </div>
         
         <div class="right-links">
@@ -53,7 +53,7 @@
             $con->close();
 
         ?>
-            <a href="index.html"><button class="butn">Log out</button></a>
+            <a href="index.php"><button class="butn">Log out</button></a>
         </div>
     </div>
     <div class="profileBox">

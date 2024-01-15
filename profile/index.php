@@ -18,41 +18,44 @@
         <div class="box form-box">
             <?php
             
-                // connection
-                include("/XAMPP/htdocs/sem3/test-project/Controller/connection.php");
-                // when user click on submit, have to get data
+// Connection
+include("/XAMPP/htdocs/sem3/test-project/Controller/connection.php");
+
                 if(isset($_POST['submit'])){
-                    // email is the input id
                     $email = mysqli_real_escape_string($con, $_POST['email']);
                     $password = mysqli_real_escape_string($con, $_POST['password']);
 
                     // Call the stored procedure
-                    // 2nd Stored Procedure
                     $sql = "CALL emailCheck(?, ?)";
                     $stmt = $con->prepare($sql);
                     $stmt->bind_param("ss", $email, $password);
                     $stmt->execute();
+
+                    // Check for errors
+                    if (!$stmt) {
+                        die('Error in SQL query: ' . $con->error);
+                    }
 
                     // Fetch the result
                     $result = $stmt->get_result();
                     $row = $result->fetch_assoc();
 
                     if(is_array($row) && !empty($row)) {
-                        // name = db name
+                        // Set session variables
                         $_SESSION['valid'] = $row['email'];
                         $_SESSION['id'] = $row['customerID'];
                         $_SESSION['username'] = $row['username'];
                         $_SESSION['password'] = $row['password'];
-                    } else {
-                        echo 
-                        "<div class='message'>
-                        <p>login error</p>
-                        <a href='index.php'><button class='btn'>Go back</button></a>
-                        </div>";
+
+                        // Redirect to home.php
+                        header("Location: home.php");
+                        exit();
                     }
                     if(isset($_SESSION['valid'])) {
-                        header("Location: home.php");
-                    }
+                        echo "<div class='message'>
+                            <p>Incorrect email or password</p>
+                            <a href='index.php'><button class='btn'>Try again</button></a>
+                            </div>";                    }
                 } else {
                 ?>
             <div class="header">
